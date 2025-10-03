@@ -72,7 +72,7 @@ const Navbar = () => {
 
               <li>
                 <details>
-                  <summary></summary>
+                  <summary>Categories</summary>
                   <ul className="p-2">
                     <li>
                       <Link>Web Design</Link>
@@ -92,8 +92,8 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end gap-5">
-            <Link className="btn btn-outline">Button</Link>
-            <Link className="btn btn-outline">Button</Link>
+            <Link className="btn btn-outline btn-primary rounded-none">Log In</Link>
+            <Link className="btn btn-primary rounded-none">Start Free Trial</Link>
           </div>
         </div>
       </Container>
