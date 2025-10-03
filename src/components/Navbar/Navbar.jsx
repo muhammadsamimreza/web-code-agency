@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../Container/Container";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
   return (
@@ -53,15 +53,18 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost text-xl">daisyUI</a>
+            <Link to='/' className="flex gap-2 items-center">
+                <img src="./logo.png" alt="" />
+                <span className="text-xl font-bold text-[#697077]">WebCode</span>
+            </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
               <li>
-                <NavLink to="/service">Service</NavLink>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <NavLink to="/home">Home</NavLink>
+                <NavLink to="/service">Service</NavLink>
               </li>
               <li>
                 <NavLink to="/blogs">Blogs</NavLink>
