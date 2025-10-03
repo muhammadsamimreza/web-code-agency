@@ -6,3 +6,8 @@
 *{
     font-family: "Roboto", sans-serif;
 }
+
+.active{
+    background-color: teal;
+    color: white;
+}
