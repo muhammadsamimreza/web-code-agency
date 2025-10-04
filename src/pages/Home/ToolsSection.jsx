@@ -1,7 +1,8 @@
 import React from "react";
 import Container from "../../components/Container/Container";
-import { Settings, Code, ShieldCheck, Users, ArrowRight } from "lucide-react";
+import { Settings, Code, ShieldCheck, Users } from "lucide-react";
 import Card from "../../components/Cards/Card";
+import HeadingSection from "../../components/HeadingSection/HeadingSection";
 
 const tools = [
   {
@@ -32,12 +33,16 @@ const ToolsSection = () => {
   return (
     <Container>
       <div className="py-10 text-center space-y-10">
-        <div className="space-y-2">
+        {/* <div className="space-y-2">
           <p className="uppercase font-semibold">The tools you need</p>
           <h1 className="text-3xl font-bold">
             All-in-One Solution for Your Projects
           </h1>
-        </div>
+        </div> */}
+        <HeadingSection
+        heading="All-in-One Solution for Your Projects"
+        subHeading="The tools you need"
+        ></HeadingSection>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 mt-14">
           {tools.map((tool, index) => (
             <Card key={index} tool={tool}></Card>
