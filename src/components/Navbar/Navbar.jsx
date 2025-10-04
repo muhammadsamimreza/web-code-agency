@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="bg-base-100 shadow-sm">
       <Container>
-        <div className="navbar ">
+        <div className="navbar p-0 ">
           <div className="navbar-start">
             <div className="dropdown">
               <div
@@ -92,7 +92,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end gap-5">
-            <Link className="btn btn-outline btn-primary rounded-none">Log In</Link>
+            <Link className="btn btn-outline btn-primary rounded-none hidden sm:flex">Log In</Link>
             <Link className="btn btn-primary rounded-none">Start Free Trial</Link>
           </div>
         </div>
