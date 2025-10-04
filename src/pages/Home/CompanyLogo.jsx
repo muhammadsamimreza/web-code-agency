@@ -1,7 +1,7 @@
 import React from "react";
 import HeadingSection from "../../components/HeadingSection/HeadingSection";
 import { FaApple, FaGoogle, FaAmazon, FaMicrosoft, FaFacebook } from "react-icons/fa";
-
+import '../../App.css'
 import Container from "../../components/Container/Container";
 
 const CompanyLogo = () => {
@@ -38,12 +38,12 @@ const CompanyLogo = () => {
           description="We've partnered some most of innovatives and leadings companies to bring the best solutions to you "
         ></HeadingSection>
         <div className="mt-5 py-10 border-t border-b border-gray-300">
-           <div className="flex justify-between gap-">
+           <div className="md:w-1/2 flex justify-between mx-auto animate-scroll">
                {
                 companies.map((logo, index)=>(
 
-                    <div key={index} >
-                        <logo.icon className="text-blue-600 text-4xl"></logo.icon>
+                    <div key={index} className=" w-14 h-14 flex justify-center items-center rounded-full bg-gray-100 animate-scroll">
+                        <logo.icon className="text-blue-600 text-4xl hover:scale-110 transform transition"></logo.icon>
                     </div>
                 )
                 )
