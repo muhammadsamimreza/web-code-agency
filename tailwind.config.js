@@ -6,7 +6,7 @@ export default defineConfig({
     extend: {
       colors: {
         primary: '#0F62FE',
-        secondary: '#C1C7CD'
+        backBg: '#C1C7CD'
       },
     },
   },
