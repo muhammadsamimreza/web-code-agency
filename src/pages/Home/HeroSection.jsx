@@ -39,8 +39,8 @@ const HeroSection = () => {
                   &times;{" "}
                 </button>
                 <iframe
-                  width="560"
-                  height="315"
+                  width="100%"
+                  height="300"
                   src="https://www.youtube.com/embed/AmX0_5dKJqk?si=TPZZv-EpqL-5i5kP"
                   title="YouTube video player"
                   frameborder="0"
