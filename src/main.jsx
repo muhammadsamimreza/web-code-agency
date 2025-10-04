@@ -7,6 +7,7 @@ import Root from './assets/Root'
 import Home from './pages/Home/Home'
 import Service from './pages/Service/Service'
 import Blogs from './pages/Blogs/Blogs'
+import HeroSection from './pages/Home/HeroSection'
 
 
 const router = createBrowserRouter([
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        Component: Home
+        Component: HeroSection
       },
       {
         path: '/service',
